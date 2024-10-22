@@ -12,9 +12,9 @@ pipeline {
                 sh '/opt/maven/bin/mvn clean package'
             }
         }
-        stage('Deployment'){
-			steps{
-				deploy adapters: [ tomcat9(url: 'http://13.235.51.163:8080/', credentialsId: 'tomcatcred')], war:'target/*.war'
+        stage('Deployment') {
+			steps {
+				deploy adapters: [ tomcat9(url: 'http://13.232.126.214:8080', credentialsId: 'Tomcat Cred')], war:'**/*.war'
 			}
 		}
     }
