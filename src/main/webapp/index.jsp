@@ -1,20 +1,9 @@
-pipeline {
-    agent {
-        node {
-            label 'jenkins-slave-node-label'
-        }
-    }
-    stages {
-        stage ('checkoutcode') {
-            steps{
-                git branch: 'main' , url: 'https://github.com/SKS-ORG/java-web-app.git'
-            }
-        }
-        stage ('buildcode'){
-            steps{
-                sh '/opt/maven/bin/mvn clean package'
-            }
-        }
-        
-    }
-}
+<html>
+    <head>
+        <title>AVD Group</title>
+    </head>
+    <body>
+        <h2 style="background: blue; text-align:center; color: white;">AVD Group</h2>
+        <p>CICD Pipeline</p>
+    </body>
+</html>
