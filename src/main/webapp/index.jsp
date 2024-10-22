@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <html>
     <head>
         <title>AVD Group</title>
@@ -8,6 +7,3 @@
         <p>CICD Pipeline2</p>
     </body>
 </html>
-=======
-CICD PIPELINE
->>>>>>> 43babf43236d4dad1ad6c389c937c07fc6c4827d
