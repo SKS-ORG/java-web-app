@@ -11,7 +11,9 @@ pipeline {
             }
         }
         stage ('build code') {
-            sh '/opt/maven/bin/mvn clean package'
+            steps {
+                sh '/opt/maven/bin/mvn clean package'
+            }   
         }
     }
 }
