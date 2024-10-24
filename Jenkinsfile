@@ -10,5 +10,8 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/SKS-ORG/java-web-app.git'
             }
         }
+        stage ('build code') {
+            sh '/opt/maven/bin/mvn clean package'
+        }
     }
 }
